@@ -19,14 +19,15 @@
  * The client code then prints information about the created ingredient, recipe, and executes
  * the corresponding cooking instruction.
  *
+ */
   //*********************************************************************************
-  //*  Author: Hakan Gezginci
+  //*  Hakan Gezginci
   //* 
   //*  This program uses the abstract factory design pattern to manage recipes.
   //*  It creates instances of ingredients, recipes, and cooking instructions through
   //*  the RecipeFactory interface, demonstrating the flexibility of the pattern.
   //*********************************************************************************
- */
+ 
 
 public class RecipeSystem {
     public static void main(String[] args) {
