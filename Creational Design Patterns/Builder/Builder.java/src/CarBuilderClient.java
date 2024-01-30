@@ -1,4 +1,4 @@
-public class App {
+public class CarBuilderClient {
     public static void main(String[] args) throws Exception {
         CarDirector director = new CarDirector();
         CarBuilder sportsCarBuilder = new SportsCarBuilder();
