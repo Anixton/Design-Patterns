@@ -49,6 +49,17 @@ public class SmartHomeController {
         lightSystem.displayLightDetails();
     }
 
+    public boolean isLightSystemOn() {
+        return lightSystem.isOn();
+    }
+
+    public int getLightBrightness() {
+        return lightSystem.getBrightness();
+    }
+
+    public int getLightColor() {
+        return lightSystem.getColorTemperature();
+    }
 
 
     public void turnOnTemperatureController() {
@@ -65,6 +76,14 @@ public class SmartHomeController {
 
     public void displayTemperatureDetails() {
         temperatureController.displayTemperatureDetails();
+    }
+
+    public boolean isTemperatureControllerOn() {
+        return temperatureController.isOn();
+    }
+
+    public int getTemperature() {
+        return temperatureController.getTemperature();
     }
 
 
@@ -87,5 +106,9 @@ public class SmartHomeController {
 
     public void displaySecuritySystemStatus() {
         securitySystem.displaySystemStatus();
+    }
+
+    public boolean isSecuritySystemOn() {
+        return securitySystem.isArmed();
     }
 }

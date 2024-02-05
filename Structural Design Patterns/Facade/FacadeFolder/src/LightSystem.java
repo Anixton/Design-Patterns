@@ -62,7 +62,7 @@ public class LightSystem {
         System.out.println("Color temperature: " + getColorTemperatureDetails());
     }
 
-    private String getColorTemperatureDetails() {
+    public String getColorTemperatureDetails() {
         if(colorTemperature <= WARM_TEMPERATURE_LIMIT) {
             return "Warm";
         } else if(colorTemperature <= NEUTRAL_TEMPERATURE_LIMIT) {
@@ -70,5 +70,17 @@ public class LightSystem {
         } else {
             return "Cool";
         }
+    }
+
+    public boolean isOn() {
+        return isOn;
+    }
+
+    public int getBrightness() {
+        return brightnessPercentage;
+    }
+
+    public int getColorTemperature() {
+        return colorTemperature;
     }
 }

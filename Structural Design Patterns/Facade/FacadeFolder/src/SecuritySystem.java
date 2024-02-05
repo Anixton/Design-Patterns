@@ -55,4 +55,16 @@ public class SecuritySystem {
             System.out.println("Security alert: " + alertMessage);
         }
     }
+
+    public boolean isArmed() {
+        return isArmed;
+    }
+
+    public boolean isAlert() {
+        return isAlert;
+    }
+
+    public String getAlertMessage() {
+        return alertMessage;
+    }
 }

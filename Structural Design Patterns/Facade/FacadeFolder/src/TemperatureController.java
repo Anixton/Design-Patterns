@@ -34,4 +34,8 @@ public class TemperatureController {
         System.out.println("Temperature: " + temperature);
         System.out.println("Temperature controller is " + (isOn ? "on" : "off"));
     }
+
+    public boolean isOn() {
+        return isOn;
+    }
 }
