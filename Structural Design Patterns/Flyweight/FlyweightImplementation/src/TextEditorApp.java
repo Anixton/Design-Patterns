@@ -39,12 +39,6 @@
 *  - Concrete Flyweight: ConcreteCharacter
 *  - Flyweight Factory: CharacterFactory
 *  - Client Code: TextEditorWithGUI
-*
-*  The application demonstrates the benefits of using the flyweight pattern to manage a large
-*  number of similar objects, by sharing the common state and reducing the memory footprint.
-*  The flyweight pattern provides a memory-efficient solution for applications that require
-*  the creation of a large number of objects with similar properties, promoting performance
-*  and scalability.
 */
 
 import javax.swing.SwingUtilities;
