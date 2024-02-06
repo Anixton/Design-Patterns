@@ -8,6 +8,8 @@ https://github.com/kamranahmedse/design-patterns-for-humans
 
 https://java-design-patterns.com/
 
+https://www.tutorialspoint.com/java_concurrency/index.htm
+
 ----------------------------------------
 
 Single Responsibility Principle: A class should have only one reason to change.
