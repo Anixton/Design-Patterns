@@ -39,3 +39,5 @@ Prototype: Clone existing objects
 Object Pool: Reuse and manage instances
 
 --------------------------------------------
+
+Projelerin başındaki commentları copilotla düzelt bi ara
