@@ -1,4 +1,5 @@
 // Concrete Command
+
 public class MoveUnitCommand implements Command {
     private Unit unit;
     private Position destination;
@@ -14,5 +15,9 @@ public class MoveUnitCommand implements Command {
 
     public void undo() {
         unit.moveBack();
+    }
+
+    public void redo() {
+        unit.moveForward();
     }
 }

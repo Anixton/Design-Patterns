@@ -30,6 +30,4 @@ public class CEOTest {
 
         assertEquals("CEO: Could not handle null\r\n", outContent.toString());
     }
-
-
 }
