@@ -2,7 +2,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.Stack; 
 
 public class GameTest {
     @Test
