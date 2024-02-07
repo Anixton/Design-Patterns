@@ -32,18 +32,18 @@ public class Game {
         command.execute();
     }
 
-    // public void undoLastCommand() {
-    //     unit.moveBack();   
-    //     this.displayPosition(); 
-    // }
+    public void undoLastCommand() {
+        unit.moveBack();   
+        this.displayPosition(); 
+    }
 
-    // public void redoLastCommand() {
-    //     unit.moveForward();
-    //     this.displayPosition();
-    // }
+    public void redoLastCommand() {
+        unit.moveForward();
+        this.displayPosition();
+    }
 
     public void displayPosition() {
-        System.err.println(unit.getPosition().toString());
+        System.out.println(unit.getPosition().toString());
     }
 
     public void displayReplay() {

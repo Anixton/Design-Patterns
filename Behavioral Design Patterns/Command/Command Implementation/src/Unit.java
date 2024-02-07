@@ -80,4 +80,17 @@ public class Unit {
             System.out.println(moveList.pop().toString());
         }
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        
+        Unit unit = (Unit) obj;
+        return position.equals(unit.position) && positionHistory.equals(unit.positionHistory) && positionFuture.equals(unit.positionFuture);
+    }
 }

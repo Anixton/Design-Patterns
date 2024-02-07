@@ -20,4 +20,12 @@ public class MoveUnitCommand implements Command {
     public void redo() {
         unit.moveForward();
     }
+
+    public Position getDestination() {
+        return destination;
+    }
+
+    public Unit getUnit() {
+        return unit;
+    }
 }
