@@ -17,5 +17,5 @@ jobs:
         distribution: 'adopt'
 
     - name: Compile all Java files in AbstractFactory.java/src
-      run: | 
-        javac -d bin $(find "Creational Design Patterns/Abstract Factory/AbstractFactory.java/src" -name "*.java")
+      run: |
+        javac -d bin $(find "$GITHUB_WORKSPACE/Creational Design Patterns/Abstract Factory/AbstractFactory.java/src" -name "*.java")
