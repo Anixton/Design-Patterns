@@ -1,4 +1,4 @@
-class Cups implements Unit {
+public class Cups implements Unit {
     @Override
     public String getName() {
         return "cups";
