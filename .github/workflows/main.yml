@@ -16,5 +16,5 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
 
-    - name: Compile
-      run: javac -d bin src/**/*.java
+    - name: Compile AbstractFactory
+      run: javac -d bin "Creational Design Patterns/Abstract Factory/AbstractFactory.java/src/**/*.java"
