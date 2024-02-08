@@ -18,4 +18,5 @@ jobs:
 
     - name: Compile all Java files in AbstractFactory.java/src
       run: |
-       javac -d bin $(find "$GITHUB_WORKSPACE/Creational Design Patterns/Abstract Factory/AbstractFactory.java/src" -name "*.java")
+        cd "$GITHUB_WORKSPACE/Creational Design Patterns/Abstract Factory/AbstractFactory.java/src"
+        javac -d ../../../../bin *.java
