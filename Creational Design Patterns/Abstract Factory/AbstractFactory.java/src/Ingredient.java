@@ -1,3 +1,3 @@
-interface Ingredient {
+public interface Ingredient {
     String getName();
 }

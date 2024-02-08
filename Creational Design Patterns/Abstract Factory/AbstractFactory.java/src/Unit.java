@@ -1,3 +1,3 @@
-interface Unit {
+public interface Unit {
     String getName();
 }

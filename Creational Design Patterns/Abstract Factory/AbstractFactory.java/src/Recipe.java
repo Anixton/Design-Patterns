@@ -1,3 +1,3 @@
-interface Recipe {
+public interface Recipe {
     String getName();
 }

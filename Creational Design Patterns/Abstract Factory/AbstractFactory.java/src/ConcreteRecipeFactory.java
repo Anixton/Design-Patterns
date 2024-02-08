@@ -1,6 +1,6 @@
 import java.util.Random;
 
-class ConcreteRecipeFactory implements RecipeFactory {
+public class ConcreteRecipeFactory implements RecipeFactory {
     @Override
     public Ingredient createIngredient() {
         // Creating a random ingredient (Flour or Eggs) for illustration purposes
