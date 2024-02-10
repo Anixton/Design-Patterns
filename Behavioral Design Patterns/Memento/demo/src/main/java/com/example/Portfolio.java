@@ -3,10 +3,19 @@ import java.util.Map;
 import java.util.Stack;
 
 
+/**
+ * The Portfolio class represents a portfolio of stocks.
+ * It provides methods to buy and sell stocks, and to save and revert to previous states of the portfolio.
+ * It uses the Memento pattern to save and revert to states.
+ */
 public class Portfolio {
     private Map<String, Integer> stocks = new HashMap<>();
     private Stack<Memento> mementos = new Stack<>();
     private Stack<Memento> futurMementos = new Stack<>();
+
+    public Portfolio() {
+        saveState();
+    }
 
     public void buy(String stock, int quantity) {
         stocks.put(stock, stocks.getOrDefault(stock, 0) + quantity);
@@ -53,5 +62,12 @@ public class Portfolio {
 
     public void printPortfolio() {
         System.out.println(stocks);
+    }
+
+    @Override
+    public String toString() {
+        return "Portfolio {" +
+                stocks +
+                '}';
     }
 }

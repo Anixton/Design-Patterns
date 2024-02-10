@@ -1,6 +1,9 @@
 import java.util.Map;
-import java.util.HashMap;
-
+/**
+ * The Memento class is used to save the state of a Portfolio object.
+ * It contains a map of stocks, where the key is the stock name and the value is the quantity.
+ * It provides methods to get the saved state and to display the state.
+ */
 public class Memento {
     private Map<String,Integer> stocks;
 
