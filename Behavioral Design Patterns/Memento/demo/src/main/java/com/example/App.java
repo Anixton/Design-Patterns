@@ -1,5 +1,5 @@
 /**
- * Hello world!
+ * Add GUI for showing the portfolio and buttons for buy and sell
  *
  */
 
@@ -14,15 +14,18 @@
         portfolio.sell("AAPL", 5); // {AAPL=5, GOOG=15, MSFT=20, AMZN=5, TSLA=8}
         portfolio.sell("MSFT", 10); // {AAPL=5, GOOG=15, MSFT=10, AMZN=5, TSLA=8}
 
-        // {AAPL=5, GOOG=15, MSFT=10, AMZN=5, TSLA=8}
+        portfolio.printPortfolio();
         portfolio.revertToPreviousState(1); 
-        // {AAPL=5, GOOG=15, MSFT=20, AMZN=5, TSLA=8}
         portfolio.printPortfolio(); 
 
-        // {AAPL=5, GOOG=15, MSFT=10, AMZN=5, TSLA=8}
+
         portfolio.revertToPreviousState(1);
         portfolio.printPortfolio(); 
 
-        // {AAPL=5, GOOG=15, MSFT=10, AMZN=5, TSLA=8}
+        portfolio.revertToFutureState(1);
+        portfolio.printPortfolio();
+
+        portfolio.revertToFutureState(1);
+        portfolio.printPortfolio();
     }
 }

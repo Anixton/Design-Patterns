@@ -8,14 +8,6 @@ public class Portfolio {
     private Stack<Memento> mementos = new Stack<>();
     private Stack<Memento> futurMementos = new Stack<>();
 
-    private Stack<Memento> deepCopyStack(Stack<Memento> stack) {
-        Stack<Memento> newStack = new Stack<>();
-        for (Memento memento : stack) {
-            newStack.push(new Memento(new HashMap<>(memento.getSavedState())));
-        }
-        return newStack;
-    }
-
     public void buy(String stock, int quantity) {
         stocks.put(stock, stocks.getOrDefault(stock, 0) + quantity);
         saveState();
@@ -30,29 +22,25 @@ public class Portfolio {
         }
     }
 
-    // public void revertToPreviousState(int n) {
-    //     if (mementos.size() < n) {
-    //         System.out.println("Not enough states to revert to");
-    //         return;
-    //     }
-    //     Stack<Memento> tempStack = deepCopyStack(mementos);
-    //     for(int i = 0; i < n; i++) {
-    //         tempStack.push(mementos.pop());
-    //     }
-    //     tempStack.peek().displayMemento();
-
-    //     while (!tempStack.isEmpty()) {
-    //         mementos.push(tempStack.pop());
-    //     }
-    // }
-
     public void revertToPreviousState(int n) {
         if (mementos.size() < n) {
             System.out.println("Not enough states to revert to");
             return;
         }
         for (int i = 0; i < n; i++) {
-            mementos.pop();
+            futurMementos.push(mementos.pop());
+        }
+        Map<String, Integer> savedState = mementos.peek().getSavedState();
+        stocks = new HashMap<>(savedState);
+    }
+
+    public void revertToFutureState(int n) {
+        if (futurMementos.size() < n) {
+            System.out.println("Not enough states to revert to");
+            return;
+        }
+        for (int i = 0; i < n; i++) {
+            mementos.push(futurMementos.pop());
         }
         Map<String, Integer> savedState = mementos.peek().getSavedState();
         stocks = new HashMap<>(savedState);
@@ -62,10 +50,6 @@ public class Portfolio {
         Map<String, Integer> newMap = new HashMap<>(stocks);
         mementos.push(new Memento(newMap));
     }
-
-    // public void printPortfolio(Map<String, Integer> updatedStocks) {
-    //     System.out.println(updatedStocks);
-    // }
 
     public void printPortfolio() {
         System.out.println(stocks);
