@@ -1,6 +1,9 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * ConnectionPool manages a pool of ConnectionClass instances.
+ */
 public class ConnectionPool {
     private final int POOLSIZE=10;
     private int currentPoolSize=0;
@@ -61,5 +64,4 @@ public class ConnectionPool {
     public int getCurrentPoolSize(){
         return currentPoolSize;
     }
-
 }

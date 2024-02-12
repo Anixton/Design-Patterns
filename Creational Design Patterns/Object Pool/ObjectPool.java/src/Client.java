@@ -15,14 +15,9 @@
  *
  */
 
-  //******************************************************************************************************
-  //*  Hakan Gezginci
-  //* 
-  //*  This program illustrates the use of an object pool to efficiently manage database connections
-  //*  in a multi-threaded environment, improving performance and resource utilization.
-  //******************************************************************************************************
-
-
+/**
+ * Client class that simulates multiple clients acquiring and releasing connections concurrently.
+ */
 public class Client {
     public static void main(String[] args) {
         ConnectionPool connectionPool = new ConnectionPool();
