@@ -1,3 +1,0 @@
-interface Ingredient {
-    String getName();
-}

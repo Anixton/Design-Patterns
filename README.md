@@ -59,9 +59,14 @@ Flyweight: Reduces the cost of creating and manipulating a large number of simil
 Proxy: Provides a placeholder for another object to control access, reduce cost, and reduce complexity.
 
 --------------------------------------------
+Behavioral Design Patterns
 
-Creational Design Patterns
+
 
 
 --------------------------------------------
-Projelerin başındaki commentları copilotla düzelt bi ara
+
+
+
+
+

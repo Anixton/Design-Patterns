@@ -1,5 +1,5 @@
 public class ShapeFactory {
-    shape shape;
+    private shape shape;
 
     public shape getShape(String shapeType) {
         

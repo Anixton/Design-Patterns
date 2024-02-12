@@ -26,13 +26,6 @@
  * encryption, and more sophisticated user authentication mechanisms.
  * 
  */
-  //*****************************************************************************************************
-  //*  Hakan Gezginci
-  //* 
-  //*  This program demonstrates a simple User Authentication System using Java and design patterns.
-  //*  It showcases how Singleton and Factory patterns can be employed for managing user authentication. 
-  //*****************************************************************************************************
- 
 
 
 
@@ -44,7 +37,7 @@ public class AuthenticationProgram {
         RandomUserDataGenerator userDataGenerator = new RandomUserDataGenerator();
         Scanner scanner = new Scanner(System.in);
 
-        // If you want to test the login functionality
+        // Predefined user for testing the login functionality
         // Username: MHG
         // Password: 1?hi3/j4#
         System.out.print("Enter your Username: ");

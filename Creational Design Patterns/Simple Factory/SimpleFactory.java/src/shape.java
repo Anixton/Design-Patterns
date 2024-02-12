@@ -1,6 +1,6 @@
 public interface shape {
-    double getArea();
-    double getPerimeter();
-    void   display();
+    public double getArea();
+    public double getPerimeter();
+    public void   display();
 }
  

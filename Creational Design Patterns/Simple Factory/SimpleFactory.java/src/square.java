@@ -1,5 +1,5 @@
 public class square implements shape{
-    double length;
+    private double length;
 
     square(double length) {
         this.length = length;

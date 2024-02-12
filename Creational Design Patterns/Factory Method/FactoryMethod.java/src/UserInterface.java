@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/*
+ * The UserInterface class serves as the main entry point for the application. It interacts with the user, providing a menu to select a vehicle type (Car, Motorcycle, or Bicycle).
+ * Based on the user's selection, it leverages the Factory Method design pattern to instantiate the appropriate Vehicle object.
+ * The VehicleFactory interface is utilized to create specific vehicle objects, encapsulating the instantiation process and allowing for flexibility in the types of vehicles that can be created.
+ * Once the vehicle object is created, the application calculates and displays the safety score of the selected vehicle, providing valuable information to the user.
+ */
 public class UserInterface {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
