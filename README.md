@@ -1,15 +1,6 @@
 # Design-Patterns
  
-https://refactoring.guru/design-patterns
-
-https://www.tutorialspoint.com/design_pattern/index.htm
-
-https://github.com/kamranahmedse/design-patterns-for-humans
-
-https://java-design-patterns.com/
-
-https://www.tutorialspoint.com/java_concurrency/index.htm
-
+If you're looking to enhance your understanding of Design Patterns, I highly recommend referring to the seminal book by <a href="https://g.co/kgs/YpRbihZ">Gang of Four (GoF)</a>.
 --------------------------------------------
 
 Single Responsibility Principle: A class should have only one reason to change.
@@ -66,7 +57,15 @@ Behavioral Design Patterns
 
 --------------------------------------------
 
+https://refactoring.guru/design-patterns
 
+https://www.tutorialspoint.com/design_pattern/index.htm
+
+https://github.com/kamranahmedse/design-patterns-for-humans
+
+https://java-design-patterns.com/
+
+https://www.tutorialspoint.com/java_concurrency/index.htm
 
 
 
