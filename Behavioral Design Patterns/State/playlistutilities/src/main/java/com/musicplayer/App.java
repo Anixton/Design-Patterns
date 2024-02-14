@@ -1,10 +1,7 @@
 package com.musicplayer;
 import java.util.Scanner;
 
-/**
- * Create UML Diagram For given program
- *
- */
+
 public class App 
 { 
     public static void main(String[] args) {
