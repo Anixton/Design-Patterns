@@ -52,8 +52,27 @@ Proxy: Provides a placeholder for another object to control access, reduce cost,
 --------------------------------------------
 Behavioral Design Patterns
 
+Strategy: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
+Observer: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
+Command: Encapsulates a request as an object, thereby letting you parameterize clients with queues, requests, and operations.
+
+State: Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+Chain of Responsibility: Avoids coupling the sender of a request to its receiver by giving more than one object a chance to handle the request.
+
+Visitor: Represents an operation to be performed on the elements of an object structure without changing the classes on which it operates.
+
+Mediator: Defines an object that encapsulates how a set of objects interact.
+
+Memento: Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later.
+
+Interpreter: Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+
+Template Method: Defines the skeleton of an algorithm in an operation, deferring some steps to subclasses.
+
+Iterator: Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
 --------------------------------------------
 
