@@ -1,7 +1,8 @@
-# Design-Patterns
- 
-If you're looking to enhance your understanding of Design Patterns, I highly recommend referring to the seminal book by <a href="https://g.co/kgs/YpRbihZ">Gang of Four (GoF)</a>.
---------------------------------------------
+# Design-Patterns <br>
+
+<p>If you're looking to enhance your understanding of Design Patterns, I highly recommend referring to the seminal book by <a href="https://g.co/kgs/YpRbihZ">Gang of Four (GoF)</a>.<p></p> <br>
+
+# SOLID Principles<br>
 
 Single Responsibility Principle: A class should have only one reason to change.
 
@@ -13,9 +14,7 @@ Interface Segregation Principle: A class should not be forced to implement inter
 
 Dependency Inversion Principle: High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
---------------------------------------------
-
-Creational Design Patterns
+# Creational Design Patterns<br>
 
 Singleton: Ensures a class has only one instance and provides a global point of access to it. It's often considered an anti-pattern due to its global state.
 
@@ -31,9 +30,7 @@ Prototype: Specifies the kind of objects to create using a prototypical instance
 
 Object Pool: Avoids expensive acquisition and release of resources by recycling objects that are no longer in use. Can be a significant performance boost in some applications.
 
---------------------------------------------
-
-Structural Design Patterns
+# Structural Design Patterns<br>
 
 Adapter: Allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
 
@@ -49,8 +46,7 @@ Flyweight: Reduces the cost of creating and manipulating a large number of simil
 
 Proxy: Provides a placeholder for another object to control access, reduce cost, and reduce complexity.
 
---------------------------------------------
-Behavioral Design Patterns
+# Behavioral Design Patterns<br>
 
 Strategy: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
