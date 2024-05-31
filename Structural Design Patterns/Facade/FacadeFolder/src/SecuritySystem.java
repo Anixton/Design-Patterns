@@ -1,6 +1,31 @@
+ /**
+ * The {@code SecuritySystem} class represents a simple security system. securitySystem objects in
+ * SmartHomeController classes are implemented as instances of this class.
+ * <p>
+ * It has three private fields: {@code isArmed}, {@code isAlert}, and {@code alertMessage}.
+ * 
+ * <p> The {@code SecuritySystem} class has three private fields: {@code isArmed}, {@code isAlert}, {@code alertMessage}.
+ * Their default values :
+ * <blockquote><pre>
+ *      isArmed = false;
+ *isAlert = false;
+ *alertMessage = "";
+ * </pre></blockquote><p>
+ * 
+ * 
+ * <p>The {@code SecuritySystem} class provides methods to arm and disarm the security system,
+ * trigger and clear alerts, and display the system status. The class also includes getter methods
+ * to retrieve the current state of the security system.
+ *
+ * @author  Hakan Gezginci
+ * @see     SmartHomeApp
+ * @since   1.0
+ */
 public class SecuritySystem {
     private boolean isArmed;
+
     private boolean isAlert;
+
     private String alertMessage;
 
     public SecuritySystem() {
@@ -31,6 +56,10 @@ public class SecuritySystem {
         }
     }
 
+    /**
+     * If the system is armed, it triggers an alert with the given reason.<br>
+     * @param reason The reason for triggering the alert.
+     */
     public void triggerAlert(String reason) {
         if (isArmed) {
             isAlert = true;
