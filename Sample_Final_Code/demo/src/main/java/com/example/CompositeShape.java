@@ -15,4 +15,13 @@ public class CompositeShape extends Shape {
             shape.draw();
         }
     }
+
+    @Override
+    public CompositeShape clone() {
+        CompositeShape clonedShape = new CompositeShape();
+        for (Shape shape : shapes) {
+            clonedShape.addShape(shape.clone());
+        }
+        return clonedShape;
+    }
 }

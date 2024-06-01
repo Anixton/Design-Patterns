@@ -1,6 +1,6 @@
 package com.example;
 
-public abstract class Shape {
+public abstract class Shape implements Cloneable {
     protected DrawingStrategy strategy;
 
     public void setDrawingStrategy(DrawingStrategy strategy) {
@@ -27,4 +27,16 @@ public abstract class Shape {
         System.out.println("Erasing shape: " + this);
     }
 
+    @Override
+    public Shape clone() {
+        try {
+            Shape cloned = (Shape) super.clone();
+            if (strategy != null) {
+                cloned.strategy = (DrawingStrategy) strategy.clone();
+            }
+            return cloned;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 }

@@ -16,4 +16,11 @@ public class DrawCommand implements Command {
     public void undo() {
         shape.undraw();
     }
+
+    @Override
+    public DrawCommand clone() {
+        DrawCommand clonedCommand = DrawCommand(shape);
+        clonedCommand.shape = shape.clone();
+        return clonedCommand;
+    }
 }
